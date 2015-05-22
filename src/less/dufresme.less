@@ -1,0 +1,185 @@
+@import 'variables.less';
+
+
+
+/*--- Reset via Normalize ---*/
+
+@import '../bower_components/normalize-less/normalize.less';
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/*--- Base Styles ---*/
+
+body {
+	background: white;
+	color: 333;
+}
+
+
+
+/*--- Typography ---*/
+
+body {
+	font: 400 14px/1.4em Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+	font-weight: 400;
+	line-height: 1.4em;
+	margin: 0 0 0.8em 0;
+}
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2.18em;
+}
+h3 {
+	font-size: 1.86em;
+}
+h4 {
+	font-size: 1.54em;
+}
+h5 {
+	font-size: 1.22em;
+}
+h6 {
+	font-size: 0.9em;
+}
+
+/*--- Utils ---*/
+
+.clearfix,
+.container,
+.grid-1-sm,
+.grid-2-sm,
+.grid-3-sm,
+.grid-4-sm,
+.grid-5-sm,
+.grid-6-sm,
+.grid-7-sm,
+.grid-8-sm,
+.grid-9-sm,
+.grid-10-sm,
+.grid-11-sm,
+.grid-12-sm,
+.row {
+	overflow: auto;
+	zoom: 1;
+}
+
+
+
+/*--- Grid System ---*/
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	.row {
+		margin: 0 -10px;
+		width: 100%;
+	}
+}
+.row {
+	margin: 0 -10px;
+}
+.grid-1-sm,
+.grid-2-sm,
+.grid-3-sm,
+.grid-4-sm,
+.grid-5-sm,
+.grid-6-sm,
+.grid-7-sm,
+.grid-8-sm,
+.grid-9-sm,
+.grid-10-sm,
+.grid-11-sm,
+.grid-12-sm {
+	float: left;
+	padding: 0 10px;
+}
+.grid-1-sm {
+	width: @grid-1;
+}
+.grid-2-sm {
+	width: @grid-1 * 2;
+}
+.grid-3-sm {
+	width: @grid-1 * 3;
+}
+.grid-4-sm {
+	width: @grid-1 * 4;
+}
+.grid-5-sm {
+	width: @grid-1 * 5;
+}
+.grid-6-sm {
+	width: @grid-1 * 6;
+}
+.grid-7-sm {
+	width: @grid-1 * 7;
+}
+.grid-8-sm {
+	width: @grid-1 * 8;
+}
+.grid-9-sm {
+	width: @grid-1 * 9;
+}
+.grid-10-sm {
+	width: @grid-1 * 10;
+}
+.grid-11-sm {
+	width: @grid-1 * 11;
+}
+.grid-12-sm {
+	width: @grid-1 * 12;
+}
+
+.grid-1-sm-offset {
+	margin-left: @grid-1;
+}
+.grid-2-sm-offset {
+	margin-left: @grid-1 * 2;
+}
+.grid-3-sm-offset {
+	margin-left: @grid-1 * 3;
+}
+.grid-4-sm-offset {
+	margin-left: @grid-1 * 4;
+}
+.grid-5-sm-offset {
+	margin-left: @grid-1 * 5;
+}
+.grid-6-sm-offset {
+	margin-left: @grid-1 * 6;
+}
+.grid-7-sm-offset {
+	margin-left: @grid-1 * 7;
+}
+.grid-8-sm-offset {
+	margin-left: @grid-1 * 8;
+}
+.grid-9-sm-offset {
+	margin-left: @grid-1 * 9;
+}
+.grid-10-sm-offset {
+	margin-left: @grid-1 * 10;
+}
+.grid-11-sm-offset {
+	margin-left: @grid-1 * 11;
+}
+
+
+
+/*--- Responsive Styles ---*/
+
+@import 'dufresme-responsive.less';
