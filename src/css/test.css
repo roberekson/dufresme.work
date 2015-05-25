@@ -1,15 +1,15 @@
-.grid-1-sm,
-.grid-2-sm,
-.grid-3-sm,
-.grid-4-sm,
-.grid-5-sm,
-.grid-6-sm,
-.grid-7-sm,
-.grid-8-sm,
-.grid-9-sm,
-.grid-10-sm,
-.grid-11-sm,
-.grid-12-sm {
+#grid .grid-1-sm,
+#grid .grid-2-sm,
+#grid .grid-3-sm,
+#grid .grid-4-sm,
+#grid .grid-5-sm,
+#grid .grid-6-sm,
+#grid .grid-7-sm,
+#grid .grid-8-sm,
+#grid .grid-9-sm,
+#grid .grid-10-sm,
+#grid .grid-11-sm,
+#grid .grid-12-sm {
   background: #f1d7ce;
   border: 1px #cf7657 solid;
   min-height: 80px;
@@ -17,11 +17,26 @@
   padding-top: 20px;
   text-align: center;
 }
-/*--- Headings ---*/
-section[id] {
-  margin-top: 30px;
+#grid-offset .row {
+  background: #c7ddf0;
+  border: 1px #96b7d4 solid;
+  margin-bottom: 10px;
 }
-section[id] > h1:first-child,
-section[id] > h2:first-child {
+#grid-offset .row:last-of-type {
+  margin-bottom: 0;
+}
+/*--- Headings ---*/
+section[id] > h1,
+section[id] > h2 {
   color: #cf7657;
+  font-family: Georgia;
+}
+.example {
+  border: 1px #ccc solid;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+h1 + .example,
+h2 + .example {
+  margin-top: -20px;
 }

@@ -1,35 +1,56 @@
 @orange: 		#cf7657;
-@lightOrange:	lighten(@orange, 30%);
+@light-orange:	lighten(@orange, 30%);
 
-.grid-1-sm,
-.grid-2-sm,
-.grid-3-sm,
-.grid-4-sm,
-.grid-5-sm,
-.grid-6-sm,
-.grid-7-sm,
-.grid-8-sm,
-.grid-9-sm,
-.grid-10-sm,
-.grid-11-sm,
-.grid-12-sm {
-	background: @lightOrange;
-	border: 1px @orange solid;
-	min-height: 80px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	text-align: center;
+#grid {
+	.grid-1-sm,
+	.grid-2-sm,
+	.grid-3-sm,
+	.grid-4-sm,
+	.grid-5-sm,
+	.grid-6-sm,
+	.grid-7-sm,
+	.grid-8-sm,
+	.grid-9-sm,
+	.grid-10-sm,
+	.grid-11-sm,
+	.grid-12-sm {
+		background: @light-orange;
+		border: 1px @orange solid;
+		min-height: 80px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		text-align: center;
+	}
+}
+
+#grid-offset {
+	.row {
+		background: #c7ddf0;
+		border: 1px #96b7d4 solid;
+		margin-bottom: 10px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 
 
 
 /*--- Headings ---*/
 
-section[id] {
-	margin-top: 30px;
+section[id] > h1,
+section[id] > h2 {
+	color: @orange;
+	font-family: Georgia;
 }
 
-section[id] > h1:first-child,
-section[id] > h2:first-child {
-	color: @orange;
+.example {
+	border: 1px #ccc solid;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+h1 + .example,
+h2 + .example {
+	margin-top: -20px;
 }

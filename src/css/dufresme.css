@@ -193,6 +193,10 @@ body {
 body {
   font: 400 14px/1.4em Helvetica, Arial, sans-serif;
 }
+p {
+  line-height: 1.4em;
+  margin: 0 0 1em 0;
+}
 h1,
 h2,
 h3,
@@ -236,7 +240,9 @@ h6 {
 .grid-10-sm,
 .grid-11-sm,
 .grid-12-sm,
-.row {
+.row,
+.form-horizontal,
+.form-group {
   overflow: auto;
   zoom: 1;
 }
@@ -246,8 +252,8 @@ h6 {
   padding: 0 10px;
 }
 .container .row {
+  display: block;
   margin: 0 -10px;
-  width: 100%;
 }
 .row {
   margin: 0 -10px;
@@ -335,6 +341,159 @@ h6 {
 }
 .grid-11-sm-offset {
   margin-left: 91.66666667%;
+}
+/*--- Forms ---*/
+textarea,
+input {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+.form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form-horizontal label {
+  display: block;
+  margin-bottom: 0;
+}
+.form-horizontal label.checkbox,
+.form-horizontal label.radio {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-horizontal label.checkbox:last-of-type,
+.form-horizontal label.radio:last-of-type {
+  margin-bottom: 0;
+}
+.form-horizontal .form-group {
+  clear: both;
+}
+.form-hybrid .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+}
+.form-hybrid .form-group + .form-group,
+.form-hybrid .form-group + .button {
+  margin-left: 10px;
+}
+.form-hybrid label {
+  display: block;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.form-hybrid label.checkbox,
+.form-hybrid label.radio {
+  margin-right: 0;
+}
+.form-hybrid input[type="text"].form-element,
+.form-hybrid input[type="email"].form-element,
+.form-hybrid input[type="password"].form-element,
+.form-hybrid input[type="tel"].form-element {
+  display: block;
+  width: auto;
+}
+.form-hybrid .button {
+  position: relative;
+  top: -1px;
+}
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+}
+.form-inline .form-group + .form-group,
+.form-inline .form-group + .button {
+  margin-left: 10px;
+}
+.form-inline label {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.form-inline input[type="text"].form-element,
+.form-inline input[type="email"].form-element,
+.form-inline input[type="password"].form-element,
+.form-inline input[type="tel"].form-element {
+  display: inline-block;
+  width: auto;
+}
+.form-inline .button {
+  position: relative;
+  top: -1px;
+}
+input[type="text"].form-element,
+input[type="email"].form-element,
+input[type="password"].form-element,
+input[type="tel"].form-element {
+  border: 1px #ccc solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  height: 30px;
+  padding: 6px 6px;
+  width: 100%;
+}
+input[type="text"].form-element:focus,
+input[type="email"].form-element:focus,
+input[type="password"].form-element:focus,
+input[type="tel"].form-element:focus {
+  -webkit-box-shadow: 0px 0px 3px rgba(24, 91, 207, 0.5);
+  -moz-box-shadow: 0px 0px 3px rgba(24, 91, 207, 0.5);
+  box-shadow: 0px 0px 3px rgba(24, 91, 207, 0.5);
+  border-color: #185bcf;
+}
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+label.checkbox,
+label.radio {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+}
+/*--- Checkboxes ---*/
+.checkbox input[type="checkbox"],
+.radio input[type="checkbox"],
+.checkbox input[type="radio"],
+.radio input[type="radio"] {
+  margin-right: 5px;
+}
+/*--- Buttons ---*/
+.button {
+  background: #333;
+  border: 1px #333 solid;
+  color: white;
+  height: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 4px 15px;
+}
+.button:hover {
+  background: #666;
+  border-color: #666;
 }
 /*--- Responsive Styles ---*/
 @media (min-width: 768px) {
