@@ -21,6 +21,23 @@ body {
 
 
 
+/*--- Links ---*/
+
+a {
+	color: @color-link;
+	text-decoration: none;
+	&:hover {
+		color: @color-link-hover;
+		text-decoration: underline;
+	}
+	&:active {
+		color: darken(@color-link-hover, 20%);
+		text-decoration: underline;
+	}
+}
+
+
+
 /*--- Typography ---*/
 
 body {
@@ -56,9 +73,11 @@ h4 {
 }
 h5 {
 	font-size: 1.22em;
+	font-weight: bold;
 }
 h6 {
 	font-size: 0.9em;
+	font-weight: bold;
 }
 
 /*--- Utils ---*/
@@ -501,15 +520,164 @@ input + .help-text {
 /*--- Buttons ---*/
 
 .button {
-	background: #333;
-	border: 1px #333 solid;
-	color: white;
-	height: 30px;
+	background: #444;
+	border: 1px #444 solid;
 	.border-radius(3px);
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	height: 30px;
+	line-height: 1.5em;
 	padding: 4px 15px;
+	text-decoration: none;
 	&:hover {
-		background: #666;
-		border-color: #666;
+		background: #222;
+		border-color: #222;
+	}
+	&:active,
+	&.active {
+		background: black;
+		border-color: black;
+	}
+	&[disabled] {
+		background: #888;
+		border-color: #888;
+		cursor: default;
+		pointer-events: none;
+	}
+	&.button-lg {
+		font-size: 22px;
+		height: 48px;
+		padding: 7px 20px;
+	}
+	&.button-sm {
+		font-size: 12px;
+		height: 26px;
+		padding: 3px 12px;
+	}
+	&.button-xs {
+		font-size: 12px;
+		height: 22px;
+		padding: 2px 5px;
+	}
+}
+a.button {
+}
+
+.button-inverse {
+	background: white;
+	border-color: #bbb;
+	color: #4a4a4a;
+	&:hover {
+		background: #f0f0f0;
+		border-color: #bbb;
+	}
+	&:active,
+	&.active {
+		background: #bbb;
+		border-color: #bbb;
+		color: #333;
+	}
+	&[disabled] {
+		background: white;
+		border-color: #ccc;
+		color: #777;
+	}
+}
+
+.button-success {
+	background: @color-success;
+	border-color: @color-success;
+	&:hover {
+		background: darken(@color-success, 7%);
+		border-color: darken(@color-success, 7%);
+	}
+	&:active,
+	&.active {
+		background: darken(@color-success, 15%);
+		border-color: darken(@color-success, 15%);
+	}
+	&[disabled] {
+		background: lighten(@color-success, 15%);
+		border-color: lighten(@color-success, 15%);
+	}
+}
+
+.button-warning {
+	background: @color-warning;
+	border-color: @color-warning;
+	&:hover {
+		background: darken(@color-warning, 10%);
+		border-color: darken(@color-warning, 10%);
+	}
+	&:active,
+	&.active {
+		background: darken(@color-warning, 15%);
+		border-color: darken(@color-warning, 15%);
+	}
+	&[disabled] {
+		background: lighten(@color-warning, 15%);
+		border-color: lighten(@color-warning, 15%);
+	}
+}
+
+.button-danger {
+	background: @color-danger;
+	border-color: @color-danger;
+	&:hover {
+		background: darken(@color-danger, 12%);
+		border-color: darken(@color-danger, 12%);
+	}
+	&:active,
+	&.active {
+		background: darken(@color-danger, 20%);
+		border-color: darken(@color-danger, 20%);
+	}
+	&[disabled] {
+		background: lighten(@color-danger, 15%);
+		border-color: lighten(@color-danger, 15%);
+	}
+}
+
+.button-link {
+	background: @color-link;
+	border-color: @color-link;
+	&:hover {
+		background: darken(@color-link, 10%);
+		border-color: darken(@color-link, 10%);
+	}
+	&:active,
+	&.active {
+		background: darken(@color-link, 20%);
+		border-color: darken(@color-link, 20%);
+	}
+	&[disabled] {
+		background: lighten(@color-link, 15%);
+		border-color: lighten(@color-link, 15%);
+	}
+}
+
+.button-link-inverse {
+	background: transparent;
+	border-color: transparent;
+	color: @color-link;
+	&:hover {
+		background: transparent;
+		border-color: transparent;
+		color: @color-link-hover;
+		text-decoration: underline;
+	}
+	&:active,
+	&.active {
+		background: transparent;
+		border-color: transparent;
+		color: darken(@color-link-hover, 20%);
+		text-decoration: underline;
+	}
+	&[disabled] {
+		background: transparent;
+		border-color: transparent;
+		color: lighten(@color-link, 15%);
 	}
 }
 

@@ -189,6 +189,19 @@ body {
   background: white;
   color: 333;
 }
+/*--- Links ---*/
+a {
+  color: #3c6ec5;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e3764;
+  text-decoration: underline;
+}
+a:active {
+  color: #060c15;
+  text-decoration: underline;
+}
 /*--- Typography ---*/
 body {
   font: 400 14px/1.4em Helvetica, Arial, sans-serif;
@@ -221,9 +234,11 @@ h4 {
 }
 h5 {
   font-size: 1.22em;
+  font-weight: bold;
 }
 h6 {
   font-size: 0.9em;
+  font-weight: bold;
 }
 /*--- Utils ---*/
 .clearfix,
@@ -670,17 +685,158 @@ input + .help-text {
 }
 /*--- Buttons ---*/
 .button {
-  background: #333;
-  border: 1px #333 solid;
-  color: white;
-  height: 30px;
+  background: #444;
+  border: 1px #444 solid;
   border-radius: 3px;
   background-clip: padding-box;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 1.5em;
   padding: 4px 15px;
+  text-decoration: none;
 }
 .button:hover {
-  background: #666;
-  border-color: #666;
+  background: #222;
+  border-color: #222;
+}
+.button:active,
+.button.active {
+  background: black;
+  border-color: black;
+}
+.button[disabled] {
+  background: #888;
+  border-color: #888;
+  cursor: default;
+  pointer-events: none;
+}
+.button.button-lg {
+  font-size: 22px;
+  height: 48px;
+  padding: 7px 20px;
+}
+.button.button-sm {
+  font-size: 12px;
+  height: 26px;
+  padding: 3px 12px;
+}
+.button.button-xs {
+  font-size: 12px;
+  height: 22px;
+  padding: 2px 5px;
+}
+.button-inverse {
+  background: white;
+  border-color: #bbb;
+  color: #4a4a4a;
+}
+.button-inverse:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+}
+.button-inverse:active,
+.button-inverse.active {
+  background: #bbb;
+  border-color: #bbb;
+  color: #333;
+}
+.button-inverse[disabled] {
+  background: white;
+  border-color: #ccc;
+  color: #777;
+}
+.button-success {
+  background: #3cc549;
+  border-color: #3cc549;
+}
+.button-success:hover {
+  background: #33ab3e;
+  border-color: #33ab3e;
+}
+.button-success:active,
+.button-success.active {
+  background: #298b33;
+  border-color: #298b33;
+}
+.button-success[disabled] {
+  background: #77d780;
+  border-color: #77d780;
+}
+.button-warning {
+  background: #e5c845;
+  border-color: #e5c845;
+}
+.button-warning:hover {
+  background: #d9b71e;
+  border-color: #d9b71e;
+}
+.button-warning:active,
+.button-warning.active {
+  background: #c2a41b;
+  border-color: #c2a41b;
+}
+.button-warning[disabled] {
+  background: #eedc88;
+  border-color: #eedc88;
+}
+.button-danger {
+  background: #e54b45;
+  border-color: #e54b45;
+}
+.button-danger:hover {
+  background: #d0241d;
+  border-color: #d0241d;
+}
+.button-danger:active,
+.button-danger.active {
+  background: #ac1e18;
+  border-color: #ac1e18;
+}
+.button-danger[disabled] {
+  background: #ee8c88;
+  border-color: #ee8c88;
+}
+.button-link {
+  background: #3c6ec5;
+  border-color: #3c6ec5;
+}
+.button-link:hover {
+  background: #2f589f;
+  border-color: #2f589f;
+}
+.button-link:active,
+.button-link.active {
+  background: #244277;
+  border-color: #244277;
+}
+.button-link[disabled] {
+  background: #779ad7;
+  border-color: #779ad7;
+}
+.button-link-inverse {
+  background: transparent;
+  border-color: transparent;
+  color: #3c6ec5;
+}
+.button-link-inverse:hover {
+  background: transparent;
+  border-color: transparent;
+  color: #1e3764;
+  text-decoration: underline;
+}
+.button-link-inverse:active,
+.button-link-inverse.active {
+  background: transparent;
+  border-color: transparent;
+  color: #060c15;
+  text-decoration: underline;
+}
+.button-link-inverse[disabled] {
+  background: transparent;
+  border-color: transparent;
+  color: #779ad7;
 }
 /*--- Responsive Styles ---*/
 @media (min-width: 768px) {

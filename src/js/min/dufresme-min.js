@@ -1,0 +1,1 @@
+!function($){$(document).ready(function(){$("a[disabled]").on("click",function(n){n.preventDefault()})})}(jQuery);

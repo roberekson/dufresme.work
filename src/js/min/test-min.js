@@ -1,0 +1,1 @@
+!function($){$(document).on("ready",function(){$('a[href="#"]').on("click",function(n){n.preventDefault()})})}(jQuery);
