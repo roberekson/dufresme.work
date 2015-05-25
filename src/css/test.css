@@ -33,10 +33,28 @@ section[id] > h2 {
 }
 .example {
   border: 1px #ccc solid;
+  border-radius: 5px;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 48px 20px 20px 20px;
+  position: relative;
+}
+.example:before {
+  background-color: #f0f0f0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  color: #666;
+  content: 'example(s)';
+  font-size: 12px;
+  font-weight: bold;
+  left: 0;
+  line-height: 12px;
+  padding: 8px 10px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
 }
 h1 + .example,
 h2 + .example {
-  margin-top: -20px;
+  margin-top: -10px;
 }

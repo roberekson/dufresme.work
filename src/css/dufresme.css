@@ -205,7 +205,7 @@ h5,
 h6 {
   font-weight: 400;
   line-height: 1.4em;
-  margin: 0 0 0.8em 0;
+  margin: 0 0 0.5em 0;
 }
 h1 {
   font-size: 2.5em;
@@ -460,19 +460,7 @@ input {
   position: relative;
   top: -1px;
 }
-input[type="text"].form-element,
-input[type="email"].form-element,
-input[type="password"].form-element,
-input[type="tel"].form-element,
-input[type="url"].form-element,
-input[type="search"].form-element,
-input[type="number"].form-element,
-input[type="datetime"].form-element,
-input[type="datetime-local"].form-element,
-input[type="date"].form-element,
-input[type="month"].form-element,
-input[type="week"].form-element,
-input[type="time"].form-element,
+input.form-element,
 textarea.form-element,
 select.form-element {
   border: 1px #ccc solid;
@@ -481,23 +469,12 @@ select.form-element {
   box-sizing: border-box;
   color: #666;
   display: block;
+  font-size: 14px;
   height: 30px;
   padding: 6px 6px;
   width: 100%;
 }
-input[type="text"].form-element:focus,
-input[type="email"].form-element:focus,
-input[type="password"].form-element:focus,
-input[type="tel"].form-element:focus,
-input[type="url"].form-element:focus,
-input[type="search"].form-element:focus,
-input[type="number"].form-element:focus,
-input[type="datetime"].form-element:focus,
-input[type="datetime-local"].form-element:focus,
-input[type="date"].form-element:focus,
-input[type="month"].form-element:focus,
-input[type="week"].form-element:focus,
-input[type="time"].form-element:focus,
+input.form-element:focus,
 textarea.form-element:focus,
 select.form-element:focus {
   -webkit-box-shadow: 0px 0px 3px rgba(24, 91, 207, 0.5);
@@ -505,37 +482,28 @@ select.form-element:focus {
   box-shadow: 0px 0px 3px rgba(24, 91, 207, 0.5);
   border-color: #185bcf;
 }
-input[type="text"][disabled],
-input[type="email"][disabled],
-input[type="password"][disabled],
-input[type="tel"][disabled],
-input[type="url"][disabled],
-input[type="search"][disabled],
-input[type="number"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="date"][disabled],
-input[type="month"][disabled],
-input[type="week"][disabled],
-input[type="time"][disabled],
+input.form-element.input-lg,
+textarea.form-element.input-lg,
+select.form-element.input-lg {
+  font-size: 22px;
+  line-height: 22px;
+  height: 38px;
+  padding: 10px 6px 8px 6px;
+}
+input.form-element.input-sm,
+textarea.form-element.input-sm,
+select.form-element.input-sm {
+  font-size: 11px;
+  height: 26px;
+  padding: 5px 6px 4px 6px;
+}
+input[disabled],
 textarea[disabled],
 select[disabled] {
   background-color: #f0f0f0;
   color: #999;
 }
-input[type="text"][readonly],
-input[type="email"][readonly],
-input[type="password"][readonly],
-input[type="tel"][readonly],
-input[type="url"][readonly],
-input[type="search"][readonly],
-input[type="number"][readonly],
-input[type="datetime"][readonly],
-input[type="datetime-local"][readonly],
-input[type="date"][readonly],
-input[type="month"][readonly],
-input[type="week"][readonly],
-input[type="time"][readonly],
+input[readonly],
 textarea[readonly],
 select[readonly] {
   background-color: #f0f0f0;
@@ -693,6 +661,12 @@ label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left-width: 0;
+}
+/*--- Help Text ---*/
+input + .help-text {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 /*--- Buttons ---*/
 .button {

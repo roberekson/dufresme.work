@@ -40,7 +40,7 @@ h5,
 h6, {
 	font-weight: 400;
 	line-height: 1.4em;
-	margin: 0 0 0.8em 0;
+	margin: 0 0 0.5em 0;
 }
 h1 {
 	font-size: 2.5em;
@@ -318,19 +318,7 @@ input {
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="url"],
-input[type="search"],
-input[type="number"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
+input,
 textarea,
 select {
 	&.form-element {
@@ -339,12 +327,24 @@ select {
 		box-sizing: border-box;
 		color: #666;
 		display: block;
+		font-size: 14px;
 		height: 30px;
 		padding: 6px 6px;
 		width: 100%;
 		&:focus {
 			.box-shadow(0px 0px 3px fade(@color-highlight, 50%));
 			border-color: @color-highlight;
+		}
+		&.input-lg {
+			font-size: 22px;
+			line-height: 22px;
+			height: 38px;
+			padding: 10px 6px 8px 6px;
+		}
+		&.input-sm {
+			font-size: 11px;
+			height: 26px;
+			padding: 5px 6px 4px 6px;
 		}
 	}
 	&[disabled] {
@@ -484,6 +484,16 @@ label {
 			border-left-width: 0;
 		}
 	}
+}
+
+
+
+/*--- Help Text ---*/
+
+input + .help-text {
+	color: #666;
+	font-size: 0.9em;
+	margin-top: 5px;
 }
 
 
