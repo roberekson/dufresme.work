@@ -66,22 +66,28 @@ h6, {
 	line-height: 1.4em;
 	margin: 0 0 0.5em 0;
 }
+
 h1 {
 	font-size: 2.5em;
 }
+
 h2 {
 	font-size: 2.18em;
 }
+
 h3 {
 	font-size: 1.86em;
 }
+
 h4 {
 	font-size: 1.54em;
 }
+
 h5 {
 	font-size: 1.22em;
 	font-weight: 600;
 }
+
 h6 {
 	font-size: 0.9em;
 	font-weight: 700;
@@ -90,25 +96,101 @@ h6 {
 strong,
 .strong {
 	font-weight: 600;
+	strong,
+	.strong,
+	&.strong {
+		font-weight: 700;
+	}
 }
+
 em,
 .emphasize {
 	font-style: italic;
 }
+
 u,
 .underline {
 	text-decoration: underline;
+	code {
+		padding: 0;
+	}
 }
-mark {
+
+mark,
+.mark {
 	background-color: #fbfd99;
 	padding: 0 2px;
 }
-s {
+
+s,
+.strike {
 	text-decoration: line-through;
+	code {
+		padding: 0;
+	}
 }
-small {
+
+code,
+.code {
+	background-color: #f0f0f0;
+	font-family: monospace;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0 2px;
+}
+
+small,
+.small {
 	font-size: 0.8em;
 }
+
+abbr[title] {
+	border-bottom: 1px #333 dotted;
+	cursor: help;
+}
+.initials {
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+
+
+/*--- Text Alignment ---*/
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+
+
+/*--- Text Transformation ---*/
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+
 
 /*--- Utils ---*/
 

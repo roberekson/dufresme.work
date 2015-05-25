@@ -66,3 +66,8 @@ h2 + .example {
 #buttons label {
   margin-top: 10px;
 }
+.text-uppercase code,
+.text-lowercase code,
+.text-capitalize code {
+  text-transform: none;
+}

@@ -46,32 +46,76 @@
 			
 			<h3>Bold Text</h3>
 			<div class="example">
-				<p><strong>Donec id elit non mi porta gravida at eget metus.</strong></p>
+				<p><strong>Bolded text with <code>&lt;strong&gt;</code> tag.</strong></p>
+				<p><strong><strong>Double-bolded text with nested <code>&lt;strong&gt;</code> tags.</strong></strong></p>
+				<p class="strong">Bolded text with <code>.strong</code> class.</p>
+				<p class="strong"><span class="strong">Double-bolded text with nested <code>.strong</code> tags.</span></p>
+				<p class="strong"><strong>Double-bolded text with <code>&lt;strong&gt;</code> tag nested in <code>.strong</code> tag.</strong></p>
+				<p><strong><span class="strong">Double-bolded text with <code>.strong</code> class nested in <code>&lt;strong&gt;</code> tag.</span></strong></p>
+				<p><strong class="strong">Double-bolded text with <code>.strong</code> class applied to <code>&lt;strong&gt;</code> tag.</strong></p>
 			</div>
 			
 			<h3>Italicized Text</h3>
 			<div class="example">
-				<p><em>Nulla vitae elit libero, a pharetra augue.</em></p>
+				<p><em>Italicized text with <code>em</code> tag.</em></p>
+				<p class="emphasize">Italicized text with <code>.emphasize</code> tag.</p>
 			</div>
 			
 			<h3>Underlined Text</h3>
 			<div class="example">
-				<p><u>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</u></p>
+				<p><u>Underlined text with <code>u</code> tag.</u></p>
+				<p class="underline">Underlined text with <code>.underline</code> class.</p>
 			</div>
 			
 			<h3>Marked Text</h3>
 			<div class="example">
-				<p>Nullam id dolor id nibh <mark>ultricies</mark> vehicula ut id elit.</p>
+				<p>Text <mark>marked</mark> with <code>mark</code> tag.</p>
+				<p>Text <span class="mark">marked</span> with <code>.mark</code> class.</p>
 			</div>
 			
 			<h3>Strikethrough Text</h3>
 			<div class="example">
-				<p><s>Etiam porta sem malesuada magna mollis euismod.</s></p>
+				<p><s>Text struck out with the <code>s</code> tag.</s></p>
+				<p class="strike">Text struck out with <code>.strike</code> class.</p>
+			</div>
+			
+			<h3>Code</h3>
+			<div class="example">
+				<p>Text denoted as code with <code>code</code> tag.</p>
+				<p>Text denoted as code with <span class="code">.code</span> class.</p>
 			</div>
 			
 			<h3>Small Text</h3>
 			<div class="example">
-				<p><small>Curabitur blandit tempus porttitor.</small></p>
+				<p><small>Text made smaller with <code>small</code> tag.</small></p>
+				<p class="small">Text made smaller with <code>.small</code> class.</p>
+			</div>
+			
+			<h2>Text Alignment</h2>
+			<div class="example">
+				<p class="text-left">Left-aligned text with <code>.text-left</code>.</p>
+				<p class="text-center">Center-aligned text with <code>.text-center</code>.</p>
+				<p class="text-right">Right-aligned text with <code>.text-right</code>.</p>
+				<p class="text-justify">Justified text with <code>.text-justify</code>.</p>
+			</div>
+			
+			<h2>Text Transformation</h2>
+			<div class="example">
+				<p class="text-uppercase">Uppercased text with <code>.text-uppercase</code></p>
+				<p class="text-lowercase">Lowercased text with <code>.text-lowercase</code></p>
+				<p class="text-capitalize">Capitalized text with <code>.text-capitalize</code></p>
+			</div>
+			
+			<h2>Abbreviations</h2>
+			
+			<h3>Abbreviation</h3>
+			<div class="example">
+				<p>Did you know that <abbr title="HyperText Transfer Protocol">http</abbr> is an abbreviation for HyperText Transfer Protocol?</p>
+			</div>
+			
+			<h3>Initials</h3>
+			<div class="example">
+				<p>Also, a <abbr class="initials" title="Uniform Resource Locator">url</abbr> is a Uniform Resource Locator, and <span class="initials">www</span> stands for World Wide Web.</p>
 			</div>
 			
 		</section>
@@ -756,82 +800,82 @@
 				
 			</section>
 			
-			<section id="buttons">
+		</section>
+			
+		<section id="buttons">
+			
+			<h2>Buttons</h2>
+			
+			<div class="example">
 				
-				<h2>Buttons</h2>
+				<label>Button Types</label>
+				<button type="submit" class="button">Button</button>
+				<input type="submit" class="button" value="Input">
+				<a href="#" class="button">Link</a>
 				
-				<div class="example">
-					
-					<label>Button Types</label>
-					<button type="submit" class="button">Button</button>
-					<input type="submit" class="button" value="Input">
-					<a href="#" class="button">Link</a>
-					
-					<label>Button Styles</label>
-					<button type="button" class="button">Default</button>
-					<button type="button" class="button button-inverse">Inverse</button>
-					<button type="button" class="button button-success">Success</button>
-					<button type="button" class="button button-warning">Warning</button>
-					<button type="button" class="button button-danger">Danger</button>
-					<button type="button" class="button button-link">Link</button>
-					<button type="button" class="button button-link-inverse">Link Inverse</button>
-					
-					<label>Active Styles</label>
-					<button type="button" class="button active">Default</button>
-					<button type="button" class="button button-inverse active">Inverse</button>
-					<button type="button" class="button button-success active">Success</button>
-					<button type="button" class="button button-warning active">Warning</button>
-					<button type="button" class="button button-danger active">Danger</button>
-					<button type="button" class="button button-link active">Link</button>
-					<button type="button" class="button button-link-inverse active">Link Inverse</button>
-					
-					<label>Disabled Buttons</label>
-					<button type="button" class="button" disabled>Default</button>
-					<button type="button" class="button button-inverse" disabled>Inverse</button>
-					<button type="button" class="button button-success" disabled>Success</button>
-					<button type="button" class="button button-warning" disabled>Warning</button>
-					<button type="button" class="button button-danger" disabled>Danger</button>
-					<button type="button" class="button button-link" disabled>Link</button>
-					<button type="button" class="button button-link-inverse" disabled>Link Inverse</button>
-					
-					<label>Disabled Anchors</label>
-					<a href="#" class="button" disabled>Default</a>
-					<a href="#" class="button button-inverse" disabled>Inverse</a>
-					<a href="#" class="button button-success" disabled>Success</a>
-					<a href="#" class="button button-warning" disabled>Warning</a>
-					<a href="#" class="button button-danger" disabled>Danger</a>
-					<a href="#" class="button button-link" disabled>Link</a>
-					<a href="#" class="button button-link-inverse" disabled>Link Inverse</a>
-					
-					<label>Button Sizing</label>
-					<div class="form-group">
-						<button type="button" class="button button-lg">Large Button</button>
-						<a href="#" class="button button-link button-lg">Large Anchor</a>
-						<input type="submit" class="button button-inverse button-lg" value="Large Input">
-						<button type="button" class="button button-lg"><span class="fa fa-microphone"></span>Large Button with Icon</button>
-					</div>
-					<div class="form-group">
-						<button type="button" class="button">Default Button</button>
-						<a href="#" class="button button-link">Default Anchor</a>
-						<input type="submit" class="button button-inverse" value="Default Input">
-						<button type="button" class="button"><span class="fa fa-microphone"></span>Default Button with Icon</button>
-					</div>
-					<div class="form-group">
-						<button type="button" class="button button-sm">Small Button</button>
-						<a href="#" class="button button-link button-sm">Small Anchor</a>
-						<input type="submit" class="button button-inverse button-sm" value="Small Input">
-						<button type="button" class="button button-sm"><span class="fa fa-microphone"></span>Small Button with Icon</button>
-					</div>
-					<div class="form-group">
-						<button type="button" class="button button-xs">Extra Small Button</button>
-						<a href="#" class="button button-link button-xs">Extra Small Anchor</a>
-						<input type="submit" class="button button-inverse button-xs" value="Extra Small Input">
-						<button type="button" class="button button-xs"><span class="fa fa-microphone"></span>Extra Small Button with Icon</button>
-					</div>
-					
+				<label>Button Styles</label>
+				<button type="button" class="button">Default</button>
+				<button type="button" class="button button-inverse">Inverse</button>
+				<button type="button" class="button button-success">Success</button>
+				<button type="button" class="button button-warning">Warning</button>
+				<button type="button" class="button button-danger">Danger</button>
+				<button type="button" class="button button-link">Link</button>
+				<button type="button" class="button button-link-inverse">Link Inverse</button>
+				
+				<label>Active Styles</label>
+				<button type="button" class="button active">Default</button>
+				<button type="button" class="button button-inverse active">Inverse</button>
+				<button type="button" class="button button-success active">Success</button>
+				<button type="button" class="button button-warning active">Warning</button>
+				<button type="button" class="button button-danger active">Danger</button>
+				<button type="button" class="button button-link active">Link</button>
+				<button type="button" class="button button-link-inverse active">Link Inverse</button>
+				
+				<label>Disabled Buttons</label>
+				<button type="button" class="button" disabled>Default</button>
+				<button type="button" class="button button-inverse" disabled>Inverse</button>
+				<button type="button" class="button button-success" disabled>Success</button>
+				<button type="button" class="button button-warning" disabled>Warning</button>
+				<button type="button" class="button button-danger" disabled>Danger</button>
+				<button type="button" class="button button-link" disabled>Link</button>
+				<button type="button" class="button button-link-inverse" disabled>Link Inverse</button>
+				
+				<label>Disabled Anchors</label>
+				<a href="#" class="button" disabled>Default</a>
+				<a href="#" class="button button-inverse" disabled>Inverse</a>
+				<a href="#" class="button button-success" disabled>Success</a>
+				<a href="#" class="button button-warning" disabled>Warning</a>
+				<a href="#" class="button button-danger" disabled>Danger</a>
+				<a href="#" class="button button-link" disabled>Link</a>
+				<a href="#" class="button button-link-inverse" disabled>Link Inverse</a>
+				
+				<label>Button Sizing</label>
+				<div class="form-group">
+					<button type="button" class="button button-lg">Large Button</button>
+					<a href="#" class="button button-link button-lg">Large Anchor</a>
+					<input type="submit" class="button button-inverse button-lg" value="Large Input">
+					<button type="button" class="button button-lg"><span class="fa fa-microphone"></span>Large Button with Icon</button>
+				</div>
+				<div class="form-group">
+					<button type="button" class="button">Default Button</button>
+					<a href="#" class="button button-link">Default Anchor</a>
+					<input type="submit" class="button button-inverse" value="Default Input">
+					<button type="button" class="button"><span class="fa fa-microphone"></span>Default Button with Icon</button>
+				</div>
+				<div class="form-group">
+					<button type="button" class="button button-sm">Small Button</button>
+					<a href="#" class="button button-link button-sm">Small Anchor</a>
+					<input type="submit" class="button button-inverse button-sm" value="Small Input">
+					<button type="button" class="button button-sm"><span class="fa fa-microphone"></span>Small Button with Icon</button>
+				</div>
+				<div class="form-group">
+					<button type="button" class="button button-xs">Extra Small Button</button>
+					<a href="#" class="button button-link button-xs">Extra Small Anchor</a>
+					<input type="submit" class="button button-inverse button-xs" value="Extra Small Input">
+					<button type="button" class="button button-xs"><span class="fa fa-microphone"></span>Extra Small Button with Icon</button>
 				</div>
 				
-			</section>
+			</div>
 			
 		</section>
 		
