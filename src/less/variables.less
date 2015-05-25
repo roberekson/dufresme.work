@@ -1,18 +1,24 @@
-@grid-1: 100% / 12;
+@grid-1: 			100% / 12;
+
+@border-radius:		3px;
 
 @color-highlight:	#185bcf;
 
 .border-radius(@radius) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius:    @radius;
-	border-radius:         @radius;	
-	-moz-background-clip:    padding;
-	-webkit-background-clip: padding-box;
-	background-clip:         padding-box;
+	border-radius:		@radius;	
+	background-clip:	padding-box;
+}
+
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	border-top-right-radius:	@topright;
+	border-bottom-right-radius:	@bottomright;
+	border-bottom-left-radius:	@bottomleft;
+	border-top-left-radius:		@topleft;	
+	background-clip:			padding-box; 
 }
 
 .box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+	-webkit-box-shadow:	@string;
+	-moz-box-shadow:	@string;
+	box-shadow:			@string;
 }

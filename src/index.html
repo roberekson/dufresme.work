@@ -6,6 +6,7 @@
 	
 	<link rel="stylesheet" href="css/dufresme.css">
 	<link rel="stylesheet" href="css/test.css">
+	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
 
 </head>
 <body>
@@ -245,6 +246,292 @@
 			
 			<section id="forms-inputs">
 				
+				<h2>Text Inputs</h2>
+				
+				<div class="example">
+					
+					<div class="form-group">
+						<label>Text Input</label>
+						<input type="text" name="text-example" placeholder="Enter your text here" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Password Input</label>
+						<input type="password" name="password-example" placeholder="Enter your password" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Email Input</label>
+						<input type="email" name="email-example" placeholder="nam@domain.com" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>URL Input</label>
+						<input type="url" name="url-example" placeholder="http://domain.com" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Telephone Input</label>
+						<input type="tel" name="tel-example" placeholder="(702) 555-1212" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Search Input</label>
+						<input type="search" name="search-example" placeholder="Enter your search terms" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Number Input</label>
+						<input type="number" name="number-example" placeholder="1234.5" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Date/Time Input</label>
+						<input type="datetime" name="datetime-example" placeholder="5/11/2015 7:00:00 AM" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Date/Time (Local) Input</label>
+						<input type="datetime-local" name="datetime-local-example" placeholder="5/11/2015 7:00:00 AM" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Date Input</label>
+						<input type="date" name="date-example" placeholder="5/11/2015" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Month Input</label>
+						<input type="month" name="month-example" placeholder="May 2015" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Week Input</label>
+						<input type="week" name="week-example" placeholder="Week 11 2015" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Time Input</label>
+						<input type="time" name="time-example" placeholder="7:00:00 AM" class="form-element">
+					</div>
+					
+					<div class="form-group">
+						<label>Disabled Text Input</label>
+						<input type="text" name="disabled-text-example" value="This input is disabled" class="form-element" disabled>
+					</div>
+					
+					<div class="form-group">
+						<label>Readonly Text Input</label>
+						<input type="text" name="readonly-text-example" value="This input is readonly" class="form-element" readonly>
+					</div>
+					
+					<div class="form-group">
+						<label>Text Area</label>
+						<textarea name="textarea-example" class="form-element" rows="3" placeholder="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."></textarea>
+					</div>
+					
+					<div class="form-group">
+						<label>Disabled Text Area</label>
+						<textarea name="disabled-textarea-example" class="form-element" rows="3" disabled>Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</textarea>
+					</div>
+					
+					<div class="form-group">
+						<label>Readonly Text Area</label>
+						<textarea name="readonly-textarea-example" class="form-element" rows="3" readonly>Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</textarea>
+					</div>
+					
+				</div>
+				
+				<h2>Selects</h2>
+				
+				<div class="example">
+					
+					<div class="form-group">
+						<label>Basic select</label>
+						<select name="sample-select" class="form-element">
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+							<option value="4">Option 4</option>
+							<option value="5">Option 5</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label>Multiple Select</label>
+						<select name="sample-select" multiple size="5" class="form-element">
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+							<option value="4">Option 4</option>
+							<option value="5">Option 5</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label>Select with Option Groups</label>
+						<select name="sample-select" class="form-element">
+							<optgroup label="Group 1">
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+								<option value="4">Option 4</option>
+								<option value="5">Option 5</option>
+							</optgroup>
+							<optgroup label="Group 2">
+								<option value="6">Option 6</option>
+								<option value="6">Option 7</option>
+								<option value="6">Option 8</option>
+							</optgroup>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label>Disabled select</label>
+						<select name="sample-select" class="form-element" disabled>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+							<option value="4">Option 4</option>
+							<option value="5">Option 5</option>
+						</select>
+					</div>
+					
+				</div>
+				
+				<h2>Radios &amp; Checkboxes</h2>
+				
+				<div class="example">
+					
+					<div class="form-group">
+						<label>Inline Checkboxes</label>
+						<div class="checkbox-inline">
+							<label>
+								<input type="checkbox" name="inline-checkbox-1" value="1">Inline Checkbox 1
+							</label>
+						</div>
+						<div class="checkbox-inline">
+							<label>
+								<input type="checkbox" name="inline-checkbox-2" value="1">Inline Checkbox 2
+							</label>
+						</div>
+						<div class="checkbox-inline">
+							<label>
+								<input type="checkbox" name="inline-checkbox-3" value="1">Inline Checkbox 3
+							</label>
+						</div>
+						<div class="checkbox-inline disabled">
+							<label>
+								<input type="checkbox" name="disabled-checkbox" value="1" disabled>Disabled Checkbox
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label>Stacked Checkboxes</label>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="stacked-checkbox-1" value="1">Stacked Checkbox 1
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="stacked-checkbox-2" value="1">Stacked Checkbox 2
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="stacked-checkbox-3" value="1">Stacked Checkbox 3
+							</label>
+						</div>
+						<div class="checkbox disabled">
+							<label>
+								<input type="checkbox" name="disabled-checkbox" value="1" disabled>Disabled Checkbox
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label>Inline Radios</label>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="inline-radio" value="1" checked>Inline Radio 1
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="inline-radio" value="1">Inline Radio 2
+							</label>
+						</div>
+						<div class="radio-inline">
+							<label>
+								<input type="radio" name="inline-radio" value="1">Inline Radio 3
+							</label>
+						</div>
+						<div class="radio-inline disabled">
+							<label>
+								<input type="radio" name="inline-radio" value="1" disabled>Disabled Radio
+							</label>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label>Stacked Radios</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="stacked-radio" value="1">Stacked Radio 1
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="stacked-radio" value="1">Stacked Radio 2
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="stacked-radio" value="1">Stacked Radio 3
+							</label>
+						</div>
+						<div class="radio disabled">
+							<label>
+								<input type="radio" name="inline-radio" value="1" disabled>Disabled Radio
+							</label>
+						</div>
+					</div>
+					
+				</div>
+				
+				<h2>Input Groups</h2>
+				
+				<div class="example">
+					
+					<div class="form-group">
+						<label>Pre Input Group</label>
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></div>
+							<input type="text" name="email-example" placeholder="name@domain.com" class="form-element">
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label>Post Input Group</label>
+						<div class="input-group">
+							<input type="text" name="email-example" placeholder="" class="form-element">
+							<div class="input-group-addon">.com</div>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label>Pre and Post Input Group</label>
+						<div class="input-group">
+							<div class="input-group-addon"><i class="fa fa-usd fa-fw"></i></div>
+							<input type="text" name="email-example" placeholder="" class="form-element">
+							<div class="input-group-addon">.00</div>
+						</div>
+					</div>
+					
+				</div>
+				
 				<h2>Simple Form</h2>
 				
 				<div class="example">
@@ -293,12 +580,16 @@
 						<div class="form-group">
 							<label class="grid-2-sm">Account Type</label>
 							<div class="grid-4-sm">
-								<label class="radio">
-									<input type="radio" name="radio-example" value="1">Free Account
-								</label>
-								<label class="radio">
-									<input type="radio" name="radio-example" value="2">Upgraded Account
-								</label>
+								<div class="radio-inline">
+									<label>
+										<input type="radio" name="radio-example" value="1">Free Account
+									</label>
+								</div>
+								<div class="radio-inline">
+									<label>
+										<input type="radio" name="radio-example" value="2">Upgraded Account
+									</label>
+								</div>
 							</div>
 						</div>
 						<div class="grid-8-sm grid-2-sm-offset">
@@ -321,6 +612,13 @@
 							<label>Password</label>
 							<input type="password" name="password-sample" class="form-element">
 						</div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="remember-me-example">Remember me
+								</label>
+							</div>
+						</div>
 						<button type="submit" class="button">Log In</button>
 					</form>
 					
@@ -340,9 +638,11 @@
 							<input type="password" name="password-sample" class="form-element">
 						</div>
 						<div class="form-group">
-							<label class="checkbox">
-								<input type="checkbox" name="remember-me-example">Remember me
-							</label>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="remember-me-example">Remember me
+								</label>
+							</div>
 						</div>
 						<button type="submit" class="button">Log In</button>
 					</form>

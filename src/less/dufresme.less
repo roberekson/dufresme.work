@@ -209,16 +209,23 @@ input {
 .form-group {
 	margin-bottom: 10px;
 	width: 100%;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .form-horizontal {
 	label {
 		display: block;
+		height: 30px;
 		margin-bottom: 0;
+		padding-top: 5px;
+		text-align: right;
 		&.checkbox,
 		&.radio {
-			display: block;
+			height: auto;
 			margin-bottom: 5px;
+			text-align: left;
 			&:last-of-type {
 				margin-bottom: 0;
 			}
@@ -251,7 +258,16 @@ input {
 	input[type="text"],
 	input[type="email"],
 	input[type="password"],
-	input[type="tel"] {
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
+	input[type="number"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"] {
 		&.form-element {
 			display: block;
 			width: auto;
@@ -274,13 +290,23 @@ input {
 		}
 	}
 	label {
+		display: inline-block;
 		margin-bottom: 0;
 		margin-right: 5px;
 	}
 	input[type="text"],
 	input[type="email"],
 	input[type="password"],
-	input[type="tel"] {
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
+	input[type="number"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"] {
 		&.form-element {
 			display: inline-block;
 			width: auto;
@@ -295,10 +321,23 @@ input {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="tel"] {
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="number"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+textarea,
+select {
 	&.form-element {
 		border: 1px #ccc solid;
-		.border-radius(3px);
+		.border-radius(@border-radius);
+		box-sizing: border-box;
+		color: #666;
 		display: block;
 		height: 30px;
 		padding: 6px 6px;
@@ -308,18 +347,32 @@ input[type="tel"] {
 			border-color: @color-highlight;
 		}
 	}
+	&[disabled] {
+		background-color: #f0f0f0;
+		color: #999;
+	}
+	&[readonly] {
+		background-color: #f0f0f0;
+	}
+}
+textarea.form-element {
+	height: auto;
+}
+select.form-element {
+	optgroup {
+		color: #333;
+		font-weight: bold;
+		font-style: normal;
+	}
+	&.form-element[multiple] {
+		height: auto;
+	}
 }
 
 label {
 	font-weight: bold;
-	display: inline-block;
+	display: block;
 	margin-bottom: 3px;
-	&.checkbox,
-	&.radio {
-		cursor: pointer;
-		display: inline-block;
-		font-weight: normal;
-	}
 }
 
 
@@ -327,10 +380,109 @@ label {
 /*--- Checkboxes ---*/
 
 .checkbox,
-.radio {
+.radio,
+.checkbox-inline,
+.radio-inline {
+	display: block;
+	label {
+		cursor: pointer;
+		display: inline-block;
+		font-weight: normal;
+	}
+	&.disabled {
+		label {
+			color: #666;
+			cursor: default;
+		}
+	}
+}
+
+.checkbox,
+.checkbox-inline {
 	input[type="checkbox"],
 	input[type="radio"] {
 		margin-right: 5px;
+		position: relative;
+		top: -1px;
+	}
+}
+
+.radio,
+.radio-inline {
+	input[type="radio"] {
+		margin-right: 7px;
+		position: relative;
+		left: 2px;
+	}
+}
+
+.checkbox-inline,
+.radio-inline {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+
+
+/*--- Input Groups ---*/
+
+.input-group {
+	display: table;
+	position: relative;
+	width: 100%;
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="search"],
+	input[type="number"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"] {
+		&.form-element {
+			.border-radius(0);
+			display: table-cell;
+			float: left;
+			width: 100%;
+			&:not(:first-child) {
+				border-top-right-radius: @border-radius;
+				border-bottom-right-radius: @border-radius;
+			}
+			&:not(:last-child) {
+				border-top-left-radius: @border-radius;
+				border-bottom-left-radius: @border-radius;
+			}
+			&:not(:first-child):not(:last-child) {
+				.border-radius(0);
+			}
+		}
+	}
+	.input-group-addon {
+		background-color: #f0f0f0;
+		border: 1px #ccc solid;
+		.border-radius(@border-radius);
+		color: #888;
+		display: table-cell;
+		height: 30px;
+		line-height: 1;
+		padding: 0 5px;
+		vertical-align: middle;
+		white-space: nowrap;
+		width: 1%;
+		&:first-child {
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-right-width: 0;
+		}
+		&:last-child {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-left-width: 0;
+		}
 	}
 }
 
