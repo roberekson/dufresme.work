@@ -16,7 +16,7 @@
 
 body {
 	background: white;
-	color: 333;
+	color: @color-base;
 }
 
 
@@ -41,12 +41,19 @@ a {
 /*--- Typography ---*/
 
 body {
-	font: 400 14px/1.4em Helvetica, Arial, sans-serif;
+	font: 400 @font-base-size/1.4em @font-stack;
 }
 
 p {
 	line-height: 1.4em;
 	margin: 0 0 1em 0;
+	&.lead {
+		font-size: @font-base-size * 1.7;
+		font-weight: 300;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 h1,
@@ -73,11 +80,34 @@ h4 {
 }
 h5 {
 	font-size: 1.22em;
-	font-weight: bold;
+	font-weight: 600;
 }
 h6 {
 	font-size: 0.9em;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+strong,
+.strong {
+	font-weight: 600;
+}
+em,
+.emphasize {
+	font-style: italic;
+}
+u,
+.underline {
+	text-decoration: underline;
+}
+mark {
+	background-color: #fbfd99;
+	padding: 0 2px;
+}
+s {
+	text-decoration: line-through;
+}
+small {
+	font-size: 0.8em;
 }
 
 /*--- Utils ---*/
@@ -549,7 +579,7 @@ input + .help-text {
 		font-size: 22px;
 		height: 48px;
 		padding: 7px 20px;
-		i {
+		.fa {
 			margin-right: 14px;
 		}
 	}
@@ -557,7 +587,7 @@ input + .help-text {
 		font-size: 12px;
 		height: 26px;
 		padding: 3px 12px;
-		i {
+		.fa {
 			margin-right: 7px;
 		}
 	}
@@ -565,12 +595,12 @@ input + .help-text {
 		font-size: 12px;
 		height: 22px;
 		padding: 2px 5px;
-		i {
+		.fa {
 			margin-left: 2px;
 			margin-right: 5px;
 		}
 	}
-	i {
+	.fa {
 		margin-left: -2px;
 		margin-right: 9px;
 	}

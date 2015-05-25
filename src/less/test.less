@@ -1,3 +1,5 @@
+@import 'variables.less';
+
 @orange: 		#cf7657;
 @light-orange:	lighten(@orange, 30%);
 
@@ -38,12 +40,6 @@
 
 /*--- Headings ---*/
 
-section[id] > h1,
-section[id] > h2 {
-	color: @orange;
-	font-family: Georgia;
-}
-
 .example {
 	border: 1px #ccc solid;
 	border-radius: 5px;
@@ -65,6 +61,15 @@ section[id] > h2 {
 		right: 0;
 		text-transform: uppercase;
 		top: 0;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: @color-base;
+		font-family: @font-stack;
 	}
 }
 

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,700,600);
 #grid .grid-1-sm,
 #grid .grid-2-sm,
 #grid .grid-3-sm,
@@ -26,11 +27,6 @@
   margin-bottom: 0;
 }
 /*--- Headings ---*/
-section[id] > h1,
-section[id] > h2 {
-  color: #cf7657;
-  font-family: Georgia;
-}
 .example {
   border: 1px #ccc solid;
   border-radius: 5px;
@@ -53,6 +49,15 @@ section[id] > h2 {
   right: 0;
   text-transform: uppercase;
   top: 0;
+}
+.example h1,
+.example h2,
+.example h3,
+.example h4,
+.example h5,
+.example h6 {
+  color: #333333;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 h1 + .example,
 h2 + .example {

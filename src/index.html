@@ -17,8 +17,9 @@
 			
 			<h1>Typography</h1>
 			
+			<h2>Headings</h2>
 			<div class="example">
-				
+						
 				<h1>Heading 1</h1>
 				<h2>Heading 2</h2>
 				<h3>Heading 3</h3>
@@ -26,11 +27,51 @@
 				<h5>Heading 5</h5>
 				<h6>Heading 6</h6>
 				
-				<p><strong>Strong text</strong></p>
-				<p><em>Emphasized text</em></p>
+			</div>
+			
+			<h2>Body Copy</h2>
+			
+			<h3>Paragraph</h3>
+			<div class="example">
 				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 				<p>Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper.</p>
-				
+			</div>
+			
+			<h3>Lead Paragraph</h3>
+			<div class="example">
+				<p class="lead">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor.</p>
+			</div>
+			
+			<h2>Inline Text</h2>
+			
+			<h3>Bold Text</h3>
+			<div class="example">
+				<p><strong>Donec id elit non mi porta gravida at eget metus.</strong></p>
+			</div>
+			
+			<h3>Italicized Text</h3>
+			<div class="example">
+				<p><em>Nulla vitae elit libero, a pharetra augue.</em></p>
+			</div>
+			
+			<h3>Underlined Text</h3>
+			<div class="example">
+				<p><u>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</u></p>
+			</div>
+			
+			<h3>Marked Text</h3>
+			<div class="example">
+				<p>Nullam id dolor id nibh <mark>ultricies</mark> vehicula ut id elit.</p>
+			</div>
+			
+			<h3>Strikethrough Text</h3>
+			<div class="example">
+				<p><s>Etiam porta sem malesuada magna mollis euismod.</s></p>
+			</div>
+			
+			<h3>Small Text</h3>
+			<div class="example">
+				<p><small>Curabitur blandit tempus porttitor.</small></p>
 			</div>
 			
 		</section>
@@ -39,6 +80,7 @@
 			
 			<h1>Grid System</h1>
 			
+			<h2>12-column Grid</h2>
 			<div class="example">
 				
 				<div class="row">
@@ -202,42 +244,38 @@
 				
 			</div>
 			
-			<section id="grid-offset">
+			<h2>Grid Offsets</h2>
+				
+			<div class="example">
 			
-				<h2>Offset Grid</h2>
-				
-				<div class="example">
-				
-					<div class="row">
-						<div class="grid-8-sm grid-4-sm-offset">
-							.grid-8-sm .grid-4-sm-offset
-						</div>
+				<div class="row">
+					<div class="grid-8-sm grid-4-sm-offset">
+						.grid-8-sm .grid-4-sm-offset
 					</div>
-					
-					<div class="row">
-						<div class="grid-3-sm">
-							.grid-3-sm
-						</div>
-						<div class="grid-3-sm grid-6-sm-offset">
-							.grid-3-em .grid-6-sm-offset
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="grid-2-sm grid-1-sm-offset">
-							.grid-2-sm .grid-sm-1-offset
-						</div>
-						<div class="grid-2-sm grid-2-sm-offset">
-							.grid-2-sm .grid-sm-2-offset
-						</div>
-						<div class="grid-2-sm grid-2-sm-offset">
-							.grid-2-sm .grid-sm-2-offset
-						</div>
-					</div>
-					
 				</div>
 				
-			</section>
+				<div class="row">
+					<div class="grid-3-sm">
+						.grid-3-sm
+					</div>
+					<div class="grid-3-sm grid-6-sm-offset">
+						.grid-3-em .grid-6-sm-offset
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="grid-2-sm grid-1-sm-offset">
+						.grid-2-sm .grid-sm-1-offset
+					</div>
+					<div class="grid-2-sm grid-2-sm-offset">
+						.grid-2-sm .grid-sm-2-offset
+					</div>
+					<div class="grid-2-sm grid-2-sm-offset">
+						.grid-2-sm .grid-sm-2-offset
+					</div>
+				</div>
+				
+			</div>
 			
 		</section>
 		
@@ -509,7 +547,7 @@
 					<div class="form-group">
 						<label>Pre Input Group</label>
 						<div class="input-group">
-							<div class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></div>
+							<div class="input-group-addon"><span class="fa fa-envelope-o fa-fw"></span></div>
 							<input type="text" name="email-example" placeholder="name@domain.com" class="form-element">
 						</div>
 					</div>
@@ -525,7 +563,7 @@
 					<div class="form-group">
 						<label>Pre and Post Input Group</label>
 						<div class="input-group">
-							<div class="input-group-addon"><i class="fa fa-usd fa-fw"></i></div>
+							<div class="input-group-addon"><span class="fa fa-usd fa-fw"></span></div>
 							<input type="text" name="email-example" placeholder="" class="form-element">
 							<div class="input-group-addon">.00</div>
 						</div>
@@ -711,7 +749,7 @@
 								</label>
 							</div>
 						</div>
-						<button type="submit" class="button"><i class="fa fa-sign-in"></i>Log In</button>
+						<button type="submit" class="button"><span class="fa fa-sign-in"></span>Log In</button>
 					</form>
 					
 				</div>
@@ -770,25 +808,25 @@
 						<button type="button" class="button button-lg">Large Button</button>
 						<a href="#" class="button button-link button-lg">Large Anchor</a>
 						<input type="submit" class="button button-inverse button-lg" value="Large Input">
-						<button type="button" class="button button-lg"><i class="fa fa-microphone"></i>Large Button with Icon</button>
+						<button type="button" class="button button-lg"><span class="fa fa-microphone"></span>Large Button with Icon</button>
 					</div>
 					<div class="form-group">
 						<button type="button" class="button">Default Button</button>
 						<a href="#" class="button button-link">Default Anchor</a>
 						<input type="submit" class="button button-inverse" value="Default Input">
-						<button type="button" class="button"><i class="fa fa-microphone"></i>Default Button with Icon</button>
+						<button type="button" class="button"><span class="fa fa-microphone"></span>Default Button with Icon</button>
 					</div>
 					<div class="form-group">
 						<button type="button" class="button button-sm">Small Button</button>
 						<a href="#" class="button button-link button-sm">Small Anchor</a>
 						<input type="submit" class="button button-inverse button-sm" value="Small Input">
-						<button type="button" class="button button-sm"><i class="fa fa-microphone"></i>Small Button with Icon</button>
+						<button type="button" class="button button-sm"><span class="fa fa-microphone"></span>Small Button with Icon</button>
 					</div>
 					<div class="form-group">
 						<button type="button" class="button button-xs">Extra Small Button</button>
 						<a href="#" class="button button-link button-xs">Extra Small Anchor</a>
 						<input type="submit" class="button button-inverse button-xs" value="Extra Small Input">
-						<button type="button" class="button button-xs"><i class="fa fa-microphone"></i>Extra Small Button with Icon</button>
+						<button type="button" class="button button-xs"><span class="fa fa-microphone"></span>Extra Small Button with Icon</button>
 					</div>
 					
 				</div>
