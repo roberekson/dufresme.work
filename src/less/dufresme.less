@@ -549,19 +549,38 @@ input + .help-text {
 		font-size: 22px;
 		height: 48px;
 		padding: 7px 20px;
+		i {
+			margin-right: 14px;
+		}
 	}
 	&.button-sm {
 		font-size: 12px;
 		height: 26px;
 		padding: 3px 12px;
+		i {
+			margin-right: 7px;
+		}
 	}
 	&.button-xs {
 		font-size: 12px;
 		height: 22px;
 		padding: 2px 5px;
+		i {
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+	}
+	i {
+		margin-left: -2px;
+		margin-right: 9px;
 	}
 }
+
 a.button {
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
 }
 
 .button-inverse {
