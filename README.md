@@ -7,7 +7,7 @@ Dufresme.work is a clean, lightweight framework based on the concepts of [Bootst
 ## Installation
 
 -	[Download the latest development version](https://github.com/roberekson/dufresme.work/archive/master.zip)
--	Clone the repo to your development environment: ``` git clone https://github.com/roberekson/dufresme.work.git ``` .
+-	Clone the repo to your environment: ``` git clone https://github.com/roberekson/dufresme.work.git ``` .
 
 **Include the CSS in your HTML document's HEAD:**
 
