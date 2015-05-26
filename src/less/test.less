@@ -93,3 +93,25 @@ h2 + .example {
 		text-transform: none;
 	}
 }
+
+
+
+/*--- Navigation ---*/
+
+nav {
+	ul {
+		li {
+			font-size: 0.9em;
+			line-height: 1.5em;
+			padding-left: 8px;
+			&.nav-top-level {
+				font-size: 1em;
+				font-weight: 600;
+				padding-left: 0;
+			}
+			& + li.nav-top-level {
+				margin-top: 1em;
+			}
+		}
+	}
+}
