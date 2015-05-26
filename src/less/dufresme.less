@@ -133,7 +133,7 @@ s,
 code,
 .code {
 	background-color: #f0f0f0;
-	font-family: monospace;
+	font-family: @font-stack-monospace;
 	font-size: 1em;
 	font-style: normal;
 	font-weight: 400;
@@ -149,9 +149,16 @@ abbr[title] {
 	border-bottom: 1px #333 dotted;
 	cursor: help;
 }
+
 .initials {
 	font-size: 0.9em;
 	text-transform: uppercase;
+}
+
+pre {
+	font-family: @font-stack-monospace;
+	font-size: 0.9em;
+	margin: 0;
 }
 
 
@@ -188,6 +195,36 @@ abbr[title] {
 
 .text-capitalize {
 	text-transform: capitalize;
+}
+
+
+
+/*--- Blockquotes ---*/
+
+blockquote {
+	background: #f0f0f0;
+	border-left: 5px #ddd solid;
+	margin: 0;
+	padding: 10px 20px;
+	p {
+		font-size: @font-base-size * 1.4;
+		font-weight: 300;
+	}
+	footer {
+		color: #777;
+		&:before {
+			content: '\2014';
+			margin-right: 5px;
+		}
+		cite {
+			font-style: italic;
+		}
+	}
+	&.blockquote-reverse {
+		border-left: 0;
+		border-right: 5px #ddd solid;
+		text-align: right;
+	}
 }
 
 
@@ -293,74 +330,74 @@ dl {
 	padding: 0 10px;
 }
 .grid-1-sm {
-	width: @grid-1;
+	width: @grid-width;
 }
 .grid-2-sm {
-	width: @grid-1 * 2;
+	width: @grid-width * 2;
 }
 .grid-3-sm {
-	width: @grid-1 * 3;
+	width: @grid-width * 3;
 }
 .grid-4-sm {
-	width: @grid-1 * 4;
+	width: @grid-width * 4;
 }
 .grid-5-sm {
-	width: @grid-1 * 5;
+	width: @grid-width * 5;
 }
 .grid-6-sm {
-	width: @grid-1 * 6;
+	width: @grid-width * 6;
 }
 .grid-7-sm {
-	width: @grid-1 * 7;
+	width: @grid-width * 7;
 }
 .grid-8-sm {
-	width: @grid-1 * 8;
+	width: @grid-width * 8;
 }
 .grid-9-sm {
-	width: @grid-1 * 9;
+	width: @grid-width * 9;
 }
 .grid-10-sm {
-	width: @grid-1 * 10;
+	width: @grid-width * 10;
 }
 .grid-11-sm {
-	width: @grid-1 * 11;
+	width: @grid-width * 11;
 }
 .grid-12-sm {
-	width: @grid-1 * 12;
+	width: @grid-width * 12;
 }
 
 .grid-1-sm-offset {
-	margin-left: @grid-1;
+	margin-left: @grid-width;
 }
 .grid-2-sm-offset {
-	margin-left: @grid-1 * 2;
+	margin-left: @grid-width * 2;
 }
 .grid-3-sm-offset {
-	margin-left: @grid-1 * 3;
+	margin-left: @grid-width * 3;
 }
 .grid-4-sm-offset {
-	margin-left: @grid-1 * 4;
+	margin-left: @grid-width * 4;
 }
 .grid-5-sm-offset {
-	margin-left: @grid-1 * 5;
+	margin-left: @grid-width * 5;
 }
 .grid-6-sm-offset {
-	margin-left: @grid-1 * 6;
+	margin-left: @grid-width * 6;
 }
 .grid-7-sm-offset {
-	margin-left: @grid-1 * 7;
+	margin-left: @grid-width * 7;
 }
 .grid-8-sm-offset {
-	margin-left: @grid-1 * 8;
+	margin-left: @grid-width * 8;
 }
 .grid-9-sm-offset {
-	margin-left: @grid-1 * 9;
+	margin-left: @grid-width * 9;
 }
 .grid-10-sm-offset {
-	margin-left: @grid-1 * 10;
+	margin-left: @grid-width * 10;
 }
 .grid-11-sm-offset {
-	margin-left: @grid-1 * 11;
+	margin-left: @grid-width * 11;
 }
 
 

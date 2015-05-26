@@ -57,7 +57,7 @@
 .example h5,
 .example h6 {
   color: #333333;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1 + .example,
 h2 + .example {
