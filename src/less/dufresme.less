@@ -192,6 +192,53 @@ abbr[title] {
 
 
 
+/*--- Lists ---*/
+
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 1.5em;
+	&.list-unstyled {
+		list-style-type: none;
+		padding: 0;
+	}	
+	&.list-inline {
+		list-style-type: none;
+		padding: 0;
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+dl {
+	margin: 0;
+	dt {
+		font-weight: 600;
+	}
+	dd {
+		margin: 0 0 1em 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&.dl-horizontal {
+		dt {
+			clear: left;
+			float: left;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 180px;
+		}
+		dd {
+			margin-left: 200px;
+		}
+	}
+}
+
+
+
 /*--- Utils ---*/
 
 .clearfix,
