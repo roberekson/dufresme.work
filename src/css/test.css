@@ -41,7 +41,7 @@
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   color: #666;
-  content: 'example(s)';
+  content: 'Example';
   font-size: 12px;
   font-weight: bold;
   left: 0;
@@ -60,6 +60,32 @@
 .example h6 {
   color: #333333;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.example .code-sample {
+  background-color: #f0f0f0;
+  border-top: 1px #ccc solid;
+  border-radius: 0 0 4px 4px;
+  font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+  font-size: 0.85em;
+  margin: 20px -20px -20px -20px;
+  padding: 42px 20px 20px 20px;
+  position: relative;
+  white-space: pre-wrap;
+}
+.example .code-sample:before {
+  background-color: #ccc;
+  color: #666;
+  content: 'Example HTML';
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
 }
 h1 + .example,
 h2 + .example {
@@ -86,4 +112,14 @@ nav ul li.nav-top-level {
 }
 nav ul li + li.nav-top-level {
   margin-top: 1em;
+}
+/*--- Syntax Highlighting ---*/
+.stx-html-tag {
+  color: #2f9f3a;
+}
+.stx-html-property {
+  color: #5e3fd4;
+}
+.stx-html-string {
+  color: #de4292;
 }
