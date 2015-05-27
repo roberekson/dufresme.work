@@ -16,7 +16,7 @@
 		$('.code-sample').each(function() {
 			$(this).html($(this).html().replace(/([[a-z]+=)"/gi, '<span class="stx-html-property">$1</span>"')
 									   .replace(/("(?!stx)[a-z0-9 -]+")/gi, '<span class="stx-html-string">$1</span>')
-									   .replace(/((&lt;\/?[a-z]+)|(&gt;))/gi, '<span class="stx-html-tag">$1</span>'));
+									   .replace(/((&lt;\/?[a-z0-9]+)|(&gt;))/gi, '<span class="stx-html-tag">$1</span>'));
 		});
 		
 	});
