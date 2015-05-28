@@ -159,6 +159,44 @@
 	.grid-xs-pull-11 {
 		right: @grid-width * 11;
 	}
+	
+	.table-responsive {
+		border: 1px @border-color solid;
+		margin-bottom: 10px;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		width: 100%;
+		.table {
+			margin-bottom: 0;
+			td,
+			th {
+				white-space: nowrap;
+			}
+		}
+		&.table {
+			border: 1px @border-color solid;
+			display: table;
+			overflow-y: auto;
+			.clearfix();
+			thead {
+				display: none;
+			}
+			tbody,
+			tfoot {
+				display: table-row;
+			}
+			tr {
+				display: table-cell;
+				float: left;
+			}
+			td,
+			th {
+				border-bottom: none;
+				display: block;
+				text-align: center;
+			}
+		}
+	}
 }
 
 @media (min-width: @media-sm-min) {

@@ -809,6 +809,107 @@ a.button {
 
 
 
+/*--- Tables ---*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 10px;
+	max-width: 100%;
+	width: 100%;
+	caption {
+		color: #666;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	td,
+	th {
+		font-size: @font-base-size;
+		padding: @table-padding-v @table-padding-h;
+	}
+	th {
+		font-weight: 600;
+		text-align: left;
+	}
+	thead {
+		th {
+			border-bottom: 1px #bbb solid;
+		}
+	}
+	tbody {
+		tr {
+			td,
+			th {
+				border-bottom: 1px #ddd solid;
+			}
+			&:last-of-type {
+				td,
+				th {
+					border-bottom: 0;
+				}
+			}
+		}
+		tr.active td,
+		tr.active th,
+		td.active {
+			background-color: @color-link-bg;
+		}
+		tr.success td,
+		tr.success th,
+		td.success {
+			background-color: @color-success-bg;
+		}
+		tr.warning td,
+		tr.warning th,
+		td.warning {
+			background-color: @color-warning-bg;
+		}
+		tr.danger td,
+		tr.danger th,
+		td.danger {
+			background-color: @color-danger-bg;
+		}
+		tr.highlight td,
+		tr.highlight th,
+		td.highlight {
+			background-color: @color-highlight-bg;
+		}
+	}
+	&.table-striped {
+		tbody {
+			tr:nth-child(odd) {
+				td,
+				th {
+					background-color: #f9f9f9;
+				}
+			}
+		}
+	}
+	&.table-bordered {
+		border: 1px #ddd solid;
+		td,
+		th {
+			border: 1px #ddd solid;
+		}
+	}
+	&.table-padded {
+		td,
+		th {
+			padding: (@table-padding-v * 2) (@table-padding-h * 2);
+		}
+	}
+}
+.table-responsive {
+	min-height: 1px;
+	overflow-x: auto;
+	&.table {
+		min-height: auto;
+		overflow-x: auto;
+	}
+}
+
+
+
 /*--- Responsive Styles ---*/
 
 @import 'dufresme-responsive.less';
