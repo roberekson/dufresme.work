@@ -175,7 +175,7 @@
 		}
 		&.table {
 			border: 1px @border-color solid;
-			display: table;
+			display: block;
 			overflow-y: auto;
 			.clearfix();
 			thead {
@@ -183,17 +183,26 @@
 			}
 			tbody,
 			tfoot {
-				display: table-row;
+				display: block;
 			}
 			tr {
-				display: table-cell;
-				float: left;
+				display: block;
+				td:last-of-type {
+					border-bottom: 1px @border-color solid;
+				}
+				&:last-of-type td {
+					border-bottom: none;
+				}
 			}
 			td,
 			th {
 				border-bottom: none;
 				display: block;
-				text-align: center;
+			}
+			tbody {
+				th {
+					background-color: @table-stripe-color;
+				}
 			}
 		}
 	}
