@@ -24,9 +24,12 @@
   padding-top: 20px;
   text-align: center;
 }
-#grid-offset .row {
+#grid .shaded-rows .row {
   background: #c7ddf0;
   border: 1px #96b7d4 solid;
+}
+.contextual-bgs p {
+  padding: 10px;
 }
 /*--- Headings ---*/
 .example {
